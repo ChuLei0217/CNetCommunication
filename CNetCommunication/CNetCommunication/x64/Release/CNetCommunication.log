@@ -1,12 +1,15 @@
-﻿生成启动时间为 2017/12/4 19:13:51。
+﻿生成启动时间为 2017/12/24 20:48:34。
      1>项目“G:\vs 2013 app\CNetCommunication\CNetCommunication\CNetCommunication.vcxproj”在节点 2 上(Build 个目标)。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_CNetCommunication.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_CNetCommunication.cpp, GeneratedFiles\Release\moc_CNetCommunication.cpp.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I. /IC:\Qt\Qt5.6.0\5.6\msvc2013_64\include /I.\GeneratedFiles\Release /IC:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtCore /IC:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtNetwork /IC:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtScript /nologo /W1 /WX- /O2 /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_NETWORK_LIB /D QT_SCRIPT_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt CNetCommunication.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I. /IC:\Qt\Qt5.6.0\5.6\msvc2013_64\include /I.\GeneratedFiles\Release /IC:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtCore /IC:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtNetwork /IC:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtScript /IC:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtGui /nologo /W1 /WX- /O2 /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_NETWORK_LIB /D QT_SCRIPT_LIB /D QT_GUI_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt CNetCommunication.cpp
          CNetCommunication.cpp
-     1>g:\vs 2013 app\cnetcommunication\cnetcommunication\cnetcommunication.cpp(37): warning C4715: “CNetCommunication::AnalyseJson”: 不是所有的控件路径都返回值
+     1>G:\Opencv3.0.0\opencv\build\include\opencv2/core/mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>G:\Opencv3.0.0\opencv\build\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>G:\Opencv3.0.0\opencv\build\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\vs 2013 app\cnetcommunication\cnetcommunication\cnetcommunication.cpp(43): warning C4715: “CNetCommunication::AnalysePostReturn”: 不是所有的控件路径都返回值
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\vs 2013 app\CNetCommunication\x64\Release\\CNetCommunication.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib qtmain.lib Qt5Core.lib Qt5Network.lib Qt5Script.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"G:\vs 2013 app\CNetCommunication\x64\Release\CNetCommunication.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\vs 2013 app\CNetCommunication\x64\Release\CNetCommunication.lib" /MACHINE:X64 x64\Release\CNetCommunication.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\vs 2013 app\CNetCommunication\x64\Release\\CNetCommunication.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib qtmain.lib Qt5Core.lib Qt5Network.lib Qt5Script.lib Qt5Gui.lib opencv_ts300.lib opencv_world300.lib opencv_calib3d300.lib opencv_core300.lib opencv_features2d300.lib opencv_flann300.lib opencv_highgui300.lib opencv_imgcodecs300.lib opencv_imgproc300.lib opencv_ml300.lib opencv_objdetect300.lib opencv_photo300.lib opencv_shape300.lib opencv_stitching300.lib opencv_superres300.lib opencv_ts300.lib opencv_video300.lib opencv_videoio300.lib opencv_videostab300.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"G:\vs 2013 app\CNetCommunication\x64\Release\CNetCommunication.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\vs 2013 app\CNetCommunication\x64\Release\CNetCommunication.lib" /MACHINE:X64 x64\Release\CNetCommunication.obj
          x64\Release\moc_CNetCommunication.obj
          x64\Release\main.obj
          CNetCommunication.vcxproj -> G:\vs 2013 app\CNetCommunication\x64\Release\CNetCommunication.exe
@@ -14,4 +17,4 @@
 
 生成成功。
 
-已用时间 00:00:00.92
+已用时间 00:00:01.42

@@ -13,19 +13,26 @@
 #include <QScriptEngine>
 #include <QScriptValue>
 #include <QScriptValueIterator>
+#include <opencv2\opencv.hpp>
+#include <qbuffer.h>
+#include <qimagereader.h>
 
 //http请求类
 class CNetCommunication : public QObject
 {
 	Q_OBJECT
 public:
-	CNetCommunication(QString * url,QByteArray * arr);
+	//用于post的构造函数
+	CNetCommunication(QString * url, QByteArray * warninginfo);
+
+	//用于get的构造函数
+	CNetCommunication(QString * url);
 
 	//发起http请求,传输预警信息
 	bool PostWarningInfo();
 
-	//接收数据
-	void GetInfo();
+	//获得电子围栏的信息
+	bool GetInfo();
 
 	//post的状态
 	bool status;
@@ -42,6 +49,18 @@ public:
 	//收到的电子围栏区域的信息
 	QByteArray getresult;
 
+	//接收照片信息
+	void GetPhoto(std::vector<cv::Mat> * photo);
+
+	//分析照片的json数据
+	void ParsePhotoJson(QByteArray bytearray);
+
+	//下载照片
+	//cv::Mat 
+	void DownloadPhoto(QString url);
+
+	//存放照片
+	std::vector<cv::Mat> * Photo;
 private:
 	//网络管理类
 	QNetworkAccessManager* manager;
